@@ -1,5 +1,5 @@
 "use client"
-import React ,{useState} from 'react'
+import React , {useState} from 'react'
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import me from "@/images/about-me/me.jpg"
@@ -21,7 +21,7 @@ function page() {
         animate={{opacity:1}}
         transition={{duration:0.8}}
         className='flex mx-auto justify-center items-center'>
-                <h1 className='font-dancingScript text-3xl md:text-7xl font-bold text-primaryTextLight dark:text-primaryTextDark'>Hello! I'm <span className='text-primaryAccent'>Venkata Sai Ashwin</span></h1>
+                <h1 className='font-dancingScript text-3xl md:text-7xl font-bold text-primaryTextLight dark:text-primaryTextDark'>Hello! I&apos;m <span className='text-primaryAccent'>Venkata Sai Ashwin</span></h1>
         </motion.div>
         <motion.div
         initial={{opacity:0, y:50}}
@@ -71,7 +71,7 @@ function page() {
             </motion.div>
             <div className='max-w-4xl text-xl md:text-2xl font-bellefair text-secondaryTextLight dark:text-secondaryTextDark px-4'>
                 <p>
-                I am a passionate computer science graduate currently working as a full stack developer at Sustally. My journey in the tech world is driven by a deep enthusiasm for building innovative products and software solutions. The solid foundational knowledge I gained during my college years, combined with the hands-on development skills I've acquired through my professional experience, has shaped me into a versatile and adept developer. I possess an insatiable curiosity and an ever-learning attitude, always eager to explore new technologies that can enhance the efficiency and quality of my work. This continuous learning ethos ensures that I stay at the forefront of the rapidly evolving tech landscape.
+                I am a passionate computer science graduate currently working as a full stack developer at Sustally. My journey in the tech world is driven by a deep enthusiasm for building innovative products and software solutions. The solid foundational knowledge I gained during my college years, combined with the hands-on development skills I&apos;ve acquired through my professional experience, has shaped me into a versatile and adept developer. I possess an insatiable curiosity and an ever-learning attitude, always eager to explore new technologies that can enhance the efficiency and quality of my work. This continuous learning ethos ensures that I stay at the forefront of the rapidly evolving tech landscape.
 
                 When I am not immersed in coding and development, you can find me on the basketball court, where I enjoy the thrill and camaraderie of the game. Alternatively, I might be indulging in my love for anime, binging on my favorite series. These activities provide me with a perfect balance, fueling my creativity and energy both in and out of the office.
                 </p>
@@ -134,7 +134,7 @@ function page() {
             }}
             viewport={{once:true}}
             className='flex gap-4 md:gap-10 px-4 lg:px-20 text-3xl md:text-6xl items-center'>
-                <h1 className=' text-primaryTextLight dark:text-primaryTextDark font-serif font-semibold max-w-2xl'>Since you've scrolled all the way down</h1>
+                <h1 className=' text-primaryTextLight dark:text-primaryTextDark font-serif font-semibold max-w-2xl'>Since you&apos;ve scrolled all the way down</h1>
                 <GoArrowRight color='#D90429'/>
             </motion.div>
             <motion.h2 
@@ -146,7 +146,7 @@ function page() {
                 delay:0.2
             }}
             viewport={{once:true}}
-            className='text-xl md:text-3xl text-textSecondary font-serif font-semibold max-w-5xl px-4 lg:px-20'>This is what you'll see me doing when I'm off work</motion.h2>
+            className='text-xl md:text-3xl text-textSecondary font-serif font-semibold max-w-5xl px-4 lg:px-20'>This is what you&apos;ll see me doing when I&apos;m off work</motion.h2>
         </div>
     </div>
   )

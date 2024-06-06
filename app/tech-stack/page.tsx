@@ -25,7 +25,7 @@ function page() {
       }}
       viewport={{once:true}}
       className='flex gap-6 items-center md:text-6xl text-3xl font-bold font-bellefair'>
-      <h2>I'm good at</h2>
+      <h2>I&apos;m good at</h2>
       <GoArrowRight color='#D90429'/>
       </motion.div>
 
