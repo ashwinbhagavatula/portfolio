@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import me from "@/images/about-me/me.jpg"
 import veltech from "@/images/about-me/veltech.png"
 import { GoArrowRight } from 'react-icons/go';
-function page() {
+function Page() {
   const [isHovered, setIsHovered] = useState(false);
     const imageVariants = {
         hidden: { opacity: 0 },
@@ -152,4 +152,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
