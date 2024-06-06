@@ -3,7 +3,6 @@ import React, { useState } from "react";
 
 import { ReactSortable } from "react-sortablejs";
 import Card from "@/components/Card";
-
 interface ItemType {
   id: number;
   title: string;
@@ -18,58 +17,92 @@ export default function Home() {
   const [state, setState] = useState<ItemType[]>([
     {
       id: 1,
-      title: "Shrek",
-      description: "A green ogre who loves peace and quiet.",
+      title: "",
+      description: "",
       image: "/ashwin.png", // Replace with actual image path
-      link: "/ashwin.png",
-      color: "#6b8e23",
-      cardType: "SQ"
+      link: "https://x.com/ashbhagavatula2",
+      color: "#D90429",
+      cardType: "ME",
     },
     {
       id: 2,
-      title: "Fiona",
-      description: "A princess who transforms into an ogre at night.",
-      image: "/ashwin.png", // Replace with actual image path
-      link: "https://en.wikipedia.org/wiki/Princess_Fiona",
-      color: "#ff69b4",
-      cardType: "RH"
+      title: "Tech Stack",
+      description: "",
+      image: "/techStack.png", // Replace with actual image path
+      link: "/tech-stack",
+      color: "#ffe3a4",
+      cardType: "SQ",
+  
     },
     {
       id: 3,
-      title: "Shrek",
-      description: "A green ogre who loves peace and quiet.",
-      image: "/ashwin.png", // Replace with actual image path
-      link: "https://en.wikipedia.org/wiki/Shrek",
-      color: "#6b8e23",
-      cardType: "RV"
+      title: "HeyDJ",
+      description: "",
+      image: "/techStack.png", // Replace with actual image path
+      link: "/tech-stack",
+      color: "#ffe3a4",
+      cardType: "RV",
+  
     },
     {
       id: 4,
-      title: "Fiona",
-      description: "A princess who transforms into an ogre at night.",
-      image: "/ashwin.png", // Replace with actual image path
-      link: "https://en.wikipedia.org/wiki/Princess_Fiona",
-      color: "#ff69b4",
-      cardType: "RV"
+      title: "Blog",
+      description: "",
+      image: "/TAP.png", // Replace with actual image path
+      link: "https://theaverageprogrammer.hashnode.dev/?source=top_nav_blog_home",
+      color: "#ffcfd2",
+      cardType: "SQ",
+  
+    },
+    {
+      id: 5,
+      title: "",
+      description: "Currently working as a Full Stack Developer @ Sustally Technologies. Worked with Node Js, Next, React, Typescript, AWS and Git to build scalable product features. ",
+      image: "/sustally-typemark.svg", // Replace with actual image path
+      link: "https://www.sustally.com",
+      color: "#8e4dff",
+      cardType: "RH",
+    },
+    {
+      id: 6,
+      title: "",
+      description: "",
+      image: "/twitter-x.svg", // Replace with actual image path
+      link: "https://x.com/ashbhagavatula2",
+      color: "#03A9F4",
+      cardType: "SQ",
+    },  
+    {
+      id: 7,
+      title: "",
+      description: "",
+      image: "/github.svg", // Replace with actual image path
+      link: "https://github.com/ashwinbhagavatula",
+      color: "#D2DEFF",
+      cardType: "SQ",
+  
     },
     // Add more items as needed
   ]);
 
+
   return (
-    <div className="max-w-5xl mx-auto flex justify-center items-center mt-20">
+    <div className="mx-auto flex justify-center items-center mt-20 mb-10 ">
       <ReactSortable 
         list={state} 
         setList={setState} 
         animation={500}
-        ghostClass="sortable-item-dragging"
-        chosenClass="sortable-item-dragging"
-        className="grid grid-cols-2 gap-4">
+        swap
+        ghostClass="sortable-item-ghost"
+        chosenClass="sortable-item-chosen"
+        className="grid grid-cols-4 gap-4 z-0"
+      >
         {state.map((item) => (
           <>
           <Card 
           id= {item.id}
-          title= {item.id}
-          description= {item.id}
+          title= {item.title}
+          description= {item.description}
           image={item.image}
           link={item.link}
           color={item.color}
