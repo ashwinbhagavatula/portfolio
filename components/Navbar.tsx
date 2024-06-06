@@ -6,7 +6,7 @@ function Navbar() {
     <div className='flex justify-between px-2 md:px-6 py-2 items-center z-50'>
         <div className='cursor-pointer group'>
           <h2 className='text-xl md:text-3xl font-dancingScript text-primaryAccent font-semibold hover:hidden bg-primaryBgLight group-hover:hidden duration-750'>Ashwin</h2>
-          <h2 className='text-xl md:text-3xl font-dancingScript text-primaryAccent font-semibold hidden group-hover:block duration-750'>アシュウィン</h2>
+          <Link href="/" ><h2 className='text-xl md:text-3xl font-dancingScript text-primaryAccent font-semibold hidden group-hover:block duration-750'>アシュウィン</h2></Link>
         </div>
         <div className='flex justify-center items-center'>
           <div className='w-72 text-xs md:text-[15px] md:w-96 bg-secondaryBgLight rounded-full flex justify-center items-center fixed z-50 top-1 md:top-4 left-0 right-0 py-2 mx-auto'>
@@ -20,8 +20,8 @@ function Navbar() {
           </div>
         </div>
         <div className='flex gap-3'>
-        <Link href="/">Resume</Link>
-        <Link href="/">Contact</Link>
+        <Link href="/Venkata_Sai_Ashwin_Resume.pdf" target='_blank' className='hover:font-semibold font-normal duration-500'>Resume</Link>
+        <Link href="/" className='hover:font-semibold font-normal duration-500'>Contact</Link>
         </div>
 
     </div>

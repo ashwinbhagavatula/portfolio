@@ -30,7 +30,7 @@ function Card(props:any) {
             height={120}
             className=""
           />
-          <Link href={`${props.link}`} prefetch={true} target='_blank'>
+          <Link href={`${props.link}`} prefetch={true} target={`${props.internal === "no" ? '_blank' : ""}`}>
           <div className='absolute left-4 bottom-4 bg-[#e1e4e6] hover:p-2 rounded-full hover:cursor-pointer hover:scale-115 duration-500'>
           <div className='bg-primaryLight p-3 rounded-full hover:cursor-pointer hover:scale-105 duration-500'>
             <GoArrowUpRight />
@@ -38,7 +38,7 @@ function Card(props:any) {
           </div> 
           </Link>
           {props.title.length > 0 && (
-            <div className='absolute left-50 bottom-5 bg-primaryLight px-3 py-1 rounded-full text-sm font-semibold'>
+            <div className='absolute left-20 bottom-5 bg-primaryLight px-3 py-1 rounded-full text-sm font-semibold'>
             {props.title}
           </div>
           )}
@@ -94,9 +94,9 @@ function Card(props:any) {
               alt={props.title}
               width={250}
               height={250}
-              className="rounded-full"
+              className=""
             />
-            <p className='text-xl font-bellefair text-white'>{props.description}</p>
+            <p className={`text-2xl font-bellefair ${props.textColor === "dark" ? "text-black" : "text-white "} px-4`} >{props.description}</p>
             <Link href={`${props.link}`} prefetch={true} target='_blank'>
               <div className='absolute left-4 bottom-4 bg-[#e1e4e6] hover:p-2 rounded-full hover:cursor-pointer hover:scale-115 duration-500'>
                 <div className='bg-primaryLight p-3 rounded-full hover:cursor-pointer hover:scale-105 duration-500'>
@@ -104,6 +104,11 @@ function Card(props:any) {
                 </div>
               </div> 
             </Link>
+            {props.title.length > 0 && (
+              <div className='absolute left-20 bottom-5 bg-primaryLight px-3 py-1 rounded-full text-sm font-semibold'>
+              {props.title}
+              </div>
+            )}
           </div>
           
         </div>

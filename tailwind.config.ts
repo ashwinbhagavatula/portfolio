@@ -14,7 +14,8 @@ const config: Config = {
       'secondaryBgLight' : '#2B2D42',
       'primaryLight' : '#EDF2F4',
       'white': "#ffffff",
-      'black': "#000000"
+      'black': "#000000",
+      'textSecondary': "#495057"
 
     },
     extend: {
