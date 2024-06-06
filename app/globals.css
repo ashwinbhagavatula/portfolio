@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-color: #EDF2F4;
+  background-image:  radial-gradient(#444cf7 0.45px, transparent 0.45px), radial-gradient(#444cf7 0.45px, #EDF2F4 0.45px);
+  background-size: 18px 18px;
+  background-position: 0 0,9px 9px;
+
+}
 /* When the first h2 element is hovered over, display the second h2 element */
 .hover-trigger:hover + .hover-target {
   display: block;

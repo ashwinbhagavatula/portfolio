@@ -30,7 +30,7 @@ export default function Home() {
       description: "",
       image: "/techStack.png", // Replace with actual image path
       link: "/tech-stack",
-      color: "#ffe3a4",
+      color: "#ffffff",
       cardType: "SQ",
   
     },
@@ -95,7 +95,7 @@ export default function Home() {
         swap
         ghostClass="sortable-item-ghost"
         chosenClass="sortable-item-chosen"
-        className="grid grid-cols-4 gap-4 z-0"
+        className="grid grid-cols-2 xl:grid-cols-4 gap-4 z-0"
       >
         {state.map((item) => (
           <>
