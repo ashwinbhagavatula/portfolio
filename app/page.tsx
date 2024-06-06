@@ -37,10 +37,11 @@ export default function Home() {
     {
       id: 3,
       title: "HeyDJ",
-      description: "",
-      image: "/techStack.png", // Replace with actual image path
-      link: "/tech-stack",
-      color: "#ffe3a4",
+      description: `Never feel disconnected from the crowd again. \n
+      A platform to connect DJ's and the audience `,
+      image: "/heydjlogo.svg", // Replace with actual image path
+      link: "https://heydj-tau.vercel.app/",
+      color: "#ffcfd2",
       cardType: "RV",
   
     },

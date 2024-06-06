@@ -19,8 +19,8 @@ function Card(props:any) {
           className={`-z-50 w-[300px] h-[300px] relative flex flex-col p-4 cursor-grab active:cursor-grabbing rounded-3xl items-center justify-center mx-auto shadow-[0_3px_10px_rgb(0,0,0,0.4)]`}
           style={{
             backgroundColor: `${props.color}99`, // Adding opacity to the color (50% opacity in hex)
-            backdropFilter: 'blur(60px)', // Apply the blur effect
-            WebkitBackdropFilter: 'blur(60px)', // For Safari support
+            backdropFilter: 'blur(70px)', // Apply the blur effect
+            WebkitBackdropFilter: 'blur(70px)', // For Safari support
           }}
         >
           <Image
@@ -53,8 +53,8 @@ function Card(props:any) {
           className={`w-[615px] h-[300px] relative col-span-2 p-4 cursor-grab active:cursor-grabbing  rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.4)]`}
           style={{
             backgroundColor: `${props.color}99`, // Adding opacity to the color (50% opacity in hex)
-            backdropFilter: 'blur(60px)', // Apply the blur effect
-            WebkitBackdropFilter: 'blur(60px)', // For Safari support
+            backdropFilter: 'blur(70px)', // Apply the blur effect
+            WebkitBackdropFilter: 'blur(70px)', // For Safari support
           }}
         >
           <div className='flex flex-col items-start justify-start mx-auto gap-4'>
@@ -84,8 +84,8 @@ function Card(props:any) {
           className={`w-[615px] h-[300px] relative col-span-2 p-4 cursor-grab active:cursor-grabbing rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.4)]`}
           style={{
             backgroundColor: `${props.color}99`, // Adding opacity to the color (50% opacity in hex)
-            backdropFilter: 'blur(60px)', // Apply the blur effect
-            WebkitBackdropFilter: 'blur(60px)', // For Safari support
+            backdropFilter: 'blur(70px)', // Apply the blur effect
+            WebkitBackdropFilter: 'blur(70px)', // For Safari support
           }}
         >
           <div className='flex flex-col items-start justify-center mx-auto gap-4'>
@@ -116,8 +116,8 @@ function Card(props:any) {
           className={` w-[300px] h-[615px] relative row-span-2 p-4 cursor-grab active:cursor-grabbing rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.4)]`}
           style={{
             backgroundColor: `${props.color}99`, // Adding opacity to the color (50% opacity in hex)
-            backdropFilter: 'blur(60px)', // Apply the blur effect
-            WebkitBackdropFilter: 'blur(60px)', // For Safari support
+            backdropFilter: 'blur(70px)', // Apply the blur effect
+            WebkitBackdropFilter: 'blur(70px)', // For Safari support
           }}
         >
           <div className='flex flex-col items-start justify-center mx-auto gap-4'>
@@ -128,7 +128,7 @@ function Card(props:any) {
               height={250}
               className="rounded-full"
             />
-            <p className='text-xl font-bellefair text-white'>{props.description}</p>
+            <p className='text-2xl text-black font-bellefair px-4'>{props.description}</p>
             <Link href={`${props.link}`} prefetch={true} target='_blank'>
               <div className='absolute left-4 bottom-4 bg-[#e1e4e6] hover:p-2 rounded-full hover:cursor-pointer hover:scale-115 duration-500'>
                 <div className='bg-primaryLight p-3 rounded-full hover:cursor-pointer hover:scale-105 duration-500'>
@@ -136,6 +136,11 @@ function Card(props:any) {
                 </div>
               </div> 
             </Link>
+            {props.title.length > 0 && (
+            <div className='absolute left-52 bottom-5 bg-primaryLight px-3 py-1 rounded-full text-sm font-semibold'>
+            {props.title}
+            </div>
+            )}
           </div>
           
         </div>
