@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import me from "@/images/about-me/me.jpg"
 import veltech from "@/images/about-me/veltech.png"
 import { GoArrowRight } from 'react-icons/go';
+import Me from '@/components/Me';
 function Page() {
   const [isHovered, setIsHovered] = useState(false);
     const imageVariants = {
@@ -14,7 +15,7 @@ function Page() {
 
   return (
 
-    <div className='mt-16 px-4 md:px-10 xl:px-20'>
+    <div className='mt-16 px-1 md:px-10 xl:px-20'>
         
         <motion.div 
         initial={{opacity:0}}
@@ -77,7 +78,7 @@ function Page() {
                 </p>
             </div>
         </motion.div>
-        <div className='flex flex-col items-start mx-auto mt-52 px-4'>
+        <div className='flex flex-col items-start mx-auto mt-20 md:mt-52 px-4'>
             <motion.div 
             initial={{opacity:0, x:-50}}
             whileInView={{opacity:1, x:0}}
@@ -102,28 +103,29 @@ function Page() {
                 
             }}
             viewport={{once:true}}
-            className='flex flex-col md:flex-row mt-16 mx-auto justify-center items-center gap-12 bg-primaryAccent/60 px-10 py-10 rounded-2xl'>
+            className='flex flex-col md:flex-row mt-16 mx-auto justify-center items-center gap-12 bg-white/60 px-10 py-10 rounded-2xl'>
                 <>
                     <Image
                         src={veltech}
                         alt="Hovered Image"
                         width={400}
                         height={100}
+                        className='bg-textSecondary px-2 py-4 rounded-xl'
                     />
                 </>
                 <div className='flex flex-col mx-auto justify-center items-center max-w-lg gap-3'>
                     <h2 className='font-semibold text-lg md:text-2xl font-serif text-textSecondary'>Bachelors In Technology in Computer Science and Engineering, Distinction-Graduated</h2>
                     
-                    <ul className="text-white text-lg md:text-2xl list-disc font-bellefair">
-                        <li>Embarked on an exhilarating journey at UOH, Hatfield, UK, where I immersed myself in the transformative realm of business analytics and consultancy.</li>
-                        <li className="mt-2">Graduated with distinction, earning my Master of Science degree in Business Analytics and Consultancy, showcasing my dedication to academic excellence and mastery of the subject matter.</li>
+                    <ul className="text-lg md:text-2xl list-disc font-bellefair">
+                        <li>Embarked on an exhilarating journey at Vel Tech Rangarajan Dr. Sagunthala Technical University, Chennai, India, where I immersed myself in the transformative realm of computer science</li>
+                        <li className="mt-2">Graduated with a CGPA of 9.01/10, earning my Bachelors degree, showcasing my dedication to academic excellence and mastery of the subject matter.</li>
                     </ul>
 
                     
                 </div>
             </motion.div>
         </div>
-        <div className='flex flex-col items-start mx-auto mt-52 gap-8'>
+        <div className='flex flex-col items-start mx-auto mt-20 md:mt-52 gap-8'>
             <motion.div 
             initial={{opacity:0, x:-50}}
             whileInView={{opacity:1, x:0}}
@@ -148,6 +150,7 @@ function Page() {
             viewport={{once:true}}
             className='text-xl md:text-3xl text-textSecondary font-serif font-semibold max-w-5xl px-4 lg:px-20'>This is what you&apos;ll see me doing when I&apos;m off work</motion.h2>
         </div>
+        <Me/>
     </div>
   )
 }
