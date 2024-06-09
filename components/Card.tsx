@@ -30,8 +30,8 @@ function Card(props:any) {
             height={120}
             className="w-16 h-16 md:w-[120px] md:h-[120px]"
           />
-          <Link href={`${props.link}`} prefetch={true} target={`${props.internal === "no" ? '_blank' : ""}`}>
-          <div className='absolute left-2 bottom-2 md:left-4 md:bottom-4 bg-[#e1e4e6] hover:p-2 rounded-full hover:cursor-pointer hover:scale-115 duration-500'>
+          <Link href={`${props.link}`} prefetch={true} target={`${props.internal === "no" ? '_blank' : ""}`} className='p-2'>
+          <div className='absolute left-2 bottom-2 md:left-4 md:bottom-4 bg-[#e1e4e6] md:hover:p-2 rounded-full hover:cursor-pointer hover:scale-115 duration-500'>
           <div className='bg-primaryLight p-1 md:p-3 rounded-full hover:cursor-pointer hover:scale-105 duration-500'>
             <GoArrowUpRight />
           </div>
@@ -66,12 +66,12 @@ function Card(props:any) {
               className="rounded-full w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
             />
             <p className='text-sm md:text-lg font-bellefair text-white'>I’m <span className='text-lg md:text-3xl font-bold'>Ashwin Bhagavatula</span>, a full stack developer from India. I’m interested in React, Next, Node, Typescript, Building products, Gaming and Music</p>
+            <Link href="about-me" prefetch={true} className='flex gap-2 items-center justify-center p-2' >
             <div className='absolute left-4 bottom-4 bg-primaryLight p-2 md:p-3 rounded-full hover:cursor-pointer hover:scale-110 duration-500'>
-              <Link href="about-me" prefetch={true} className='flex gap-2 items-center justify-center'>
               <h3 className='hidden md:block text-sm'>Know More</h3>
               <GoArrowUpRight />
-              </Link>
             </div>
+            </Link>
           </div>
           
         </div>
@@ -97,8 +97,8 @@ function Card(props:any) {
               className="w-[100px] h-[50px] md:w-[250px] md:h-[100px]"
             />
             <p className={`text-xs md:text-2xl font-bellefair ${props.textColor === "dark" ? "text-black" : "text-white "} md:px-4`} >{props.description}</p>
-            <Link href={`${props.link}`} prefetch={true} target='_blank'>
-              <div className='absolute left-2 bottom-2 md:left-4 md:bottom-4 bg-[#e1e4e6] hover:p-1 md:hover:p-2 rounded-full hover:cursor-pointer hover:scale-115 duration-500'>
+            <Link href={`${props.link}`} prefetch={true} target='_blank' className='p-2'>
+              <div className='absolute left-2 bottom-2 md:left-4 md:bottom-4 bg-[#e1e4e6] md:hover:p-2 rounded-full hover:cursor-pointer hover:scale-115 duration-500'>
                 <div className='bg-primaryLight p-2 md:p-3 rounded-full hover:cursor-pointer hover:scale-105 duration-500'>
                   <GoArrowUpRight />
                 </div>
@@ -134,8 +134,8 @@ function Card(props:any) {
               className="rounded-full w-[100px] h-[50px] md:w-[250px] md:h-[250px]"
             />
             <p className='text-sm md:text-2xl text-black font-bellefair md:px-4'>{props.description}</p>
-            <Link href={`${props.link}`} prefetch={true} target='_blank'>
-              <div className='absolute left-2 bottom-2 md:left-4 md:bottom-4 bg-[#e1e4e6] hover:p-1 md:hover:p-2 rounded-full hover:cursor-pointer hover:scale-115 duration-500'>
+            <Link href={`${props.link}`} prefetch={true} target='_blank' className='p-2'>
+              <div className='absolute left-2 bottom-2 md:left-4 md:bottom-4 bg-[#e1e4e6] md:hover:p-2 rounded-full hover:cursor-pointer hover:scale-115 duration-500'>
                 <div className='bg-primaryLight p-2 md:p-3 rounded-full hover:cursor-pointer hover:scale-105 duration-500'>
                   <GoArrowUpRight />
                 </div>
