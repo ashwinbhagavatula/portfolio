@@ -12,7 +12,7 @@ import pondi from "@/images/about-me/pondi.jpg"
 import photo from '@/images/about-me/photography.png'
 import tree from "@/images/about-me/tree.jpg"
 import horse from "@/images/about-me/horse.jpg"
-import pulaoubin from "@/images/about-me/pulaoubin.jpg"
+import pulaoubin from "@/images/about-me/pulao.jpg"
 import pizza from '@/images/about-me/pizza.jpeg'
 import pasta from '@/images/about-me/pasta.jpeg'
 import ramen from '@/images/about-me/ramen.jpeg'
