@@ -204,7 +204,9 @@ function Me() {
                 className="grid grid-cols-2 xl:grid-cols-3 xl:grid-rows-2 gap-4 z-0"
                 >
                     {travelState.map((item)=>(
-                        <div className={`${item.type === "rv" ? "w-44 h-64 md:w-96 md:h-[530px] row-span-2 col-span-1" : "w-44 h-44 md:w-96 md:h-64 row-span-1 col-span-1" } bg-primaryAccent rounded-xl md:rounded-3xl relative overflow-hidden`}>
+                        <div 
+                        key={item.id}
+                        className={`${item.type === "rv" ? "w-44 h-64 md:w-96 md:h-[530px] row-span-2 col-span-1" : "w-44 h-44 md:w-96 md:h-64 row-span-1 col-span-1" } bg-primaryAccent rounded-xl md:rounded-3xl relative overflow-hidden`}>
                         <Image 
                             src={item.image}
                             fill
@@ -267,7 +269,9 @@ function Me() {
                 className="grid grid-cols-2 xl:grid-cols-3 xl:grid-rows-2 gap-4 z-0 max-h-[530px]"
                 >
                     {state.map((item)=>(
-                        <div className={`${item.type === "rv" ? "w-44 h-64 md:w-96 md:h-[530px] row-span-2 col-span-1" : "w-44 h-44 md:w-96 md:h-64 row-span-1 col-span-1" } bg-primaryAccent rounded-xl md:rounded-3xl relative overflow-hidden`}>
+                        <div 
+                        key={item.id}
+                        className={`${item.type === "rv" ? "w-44 h-64 md:w-96 md:h-[530px] row-span-2 col-span-1" : "w-44 h-44 md:w-96 md:h-64 row-span-1 col-span-1" } bg-primaryAccent rounded-xl md:rounded-3xl relative overflow-hidden`}>
                         <Image 
                             src={item.image}
                             fill
