@@ -136,10 +136,10 @@ export default function Home() {
         swap
         ghostClass="sortable-item-ghost"
         chosenClass="sortable-item-chosen"
-        className="grid grid-cols-2 xl:grid-cols-4 gap-4 z-0"
+        className="grid grid-cols-2 xl:grid-cols-4 gap-2 md:gap-4 z-0"
       >
         {state.map((item) => (
-          <>
+          
           <Card 
           id= {item.id}
           title= {item.title}
@@ -152,7 +152,7 @@ export default function Home() {
           internal = {item.internal}
           />
           
-          </>
+
         ))}
       </ReactSortable>
     </div>
