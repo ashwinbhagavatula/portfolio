@@ -67,7 +67,7 @@ function Card(props:any) {
             />
             <p className='text-sm md:text-lg font-bellefair text-white'>I’m <span className='text-lg md:text-3xl font-bold'>Ashwin Bhagavatula</span>, a full stack developer from India. I’m interested in React, Next, Node, Typescript, Building products, Gaming and Music</p>
             <Link href="about-me" prefetch={true} className='flex gap-2 items-center justify-center ' >
-            <div className='absolute left-4 bottom-4 bg-primaryLight p-3 rounded-full hover:cursor-pointer hover:scale-110 duration-500'>
+            <div className='absolute left-4 bottom-4 bg-primaryLight p-3 rounded-full hover:cursor-pointer hover:scale-110 duration-500 flex gap-2 items-center'>
               <h3 className='hidden md:block text-sm'>Know More</h3>
               <GoArrowUpRight />
             </div>
